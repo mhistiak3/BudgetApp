@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="app">
+        <button onclick="clearStorage()" style="position: absolute;top: 30px;right: 50px;">Clear All Data</button>
+        <div class="container">
+            <h1 class="title">Budget App </h1>
+            <!-- Budget Section  -->
+            <div class="row">
+                <!-- Form  -->
+                <div class="col">
+                    <div class="budget-box">
+                        <h2>Enter Your Budget</h2>
+                        <input type="number" id="budget-value">
+                        <button id="add-budget">Add </button>
+                    </div>
+                </div>
+                <!-- Budget Details  -->
+                <div class="col">
+                    <div class="budget-details-box">
+                        <div>
+                            <h3>Budget </h3>
+                            <i class="fa fa-money"></i>
+                            <h4 id="budget">$0</h4>
+                        </div>
+                        <div>
+                            <h3>Expenses</h3>
+                            <i class="fa fa-credit-card"></i>
+                            <h4 id="expenses">$0</h4>
+                        </div>
+                        <div>
+                            <h3>Balanche</h3>
+                            <i class="fa fa-dollar"></i>
+                            <h4 id="balance">$0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expense Section  -->
+            <div class="row">
+                <div class="col">
+
+                    <div class="expense-box">
+                        <h3>Enter Your Expenses Name</h3>
+                        <input type="text" id="expense-title-name">
+                        <h3>Enter Your expenses Amount</h3>
+                        <input type="number" id="expense-value">
+                        <button id="add-expense">Add </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="expense-details-box">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Expense Name</th>
+                                    <th>Expense Amount</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="expenseComplete">
+                                <!-- <tr>
+                                    <td>Car</td>
+                                    <td>1000</td>
+                                    <td><button>Delete</button></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

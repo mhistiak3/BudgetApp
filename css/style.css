@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.app{
+    width: 100%;
+    background-color: lightslategray;
+    color: white;
+}
+.fa{
+    color: #222f3e;
+    font-size: 50px;
+    margin: 15px  0;
+    text-align: center;
+}
+.title{
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+}
+.col{
+    width: 50%;
+}
+.budget-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.expense-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+button {
+    border: none;
+    padding: 7px 15px;
+    background-color: #222f3e;
+    font-family: 'Roboto';
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.expense-details-box button{
+    padding: 3px 7px;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: crimson;
+}
+
+.budget-details-box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.expense-details-box{
+    display: flex;
+    justify-content: space-between;
+}
+.expense-details-box h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.expense-details-box h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222f3e;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.col input{
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px 0;
+    background-color: #c8d6e5;
+}
+thead{
+    font-size: 25px;
+    text-align: center;
+    
+}
+th,td{
+    padding: 0 20px;
+    text-align: center;
+}
+td{
+    padding-top: 10px;
+    font-size: 18px;
+}
